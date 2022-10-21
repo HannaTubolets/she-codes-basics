@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      body {
+        background: linear-gradient(179.62deg, #424651 1.5%, #1e2129 97.52%);
+        color: #f5f5f5;
+        font-family: "Raleway", "Roboto", "Space Grotesk", sans-serif;
+        margin: 0 60px;
+      }
+
+      .main-heading {
+        font-size: 52px;
+        text-align: center;
+        margin: 36px 0 16px;
+      }
+
+      .sub-heading {
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 0 32px;
+        border: 1px solid rgba(245, 245, 245, 0.3);
+        border-radius: 6px;
+        padding: 16px;
+      }
+
+      .accent-color {
+        color: #fd485d;
+      }
+      .txt {
+        font-family: "Inter Tight", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 24px;
+      }
+
+      .content {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 60;
+      }
+
+      .main-img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 32px;
+        margin-top: 32px;
+        border-radius: 6px;
+      }
+
+      .link {
+        text-decoration: none;
+        color: #fd485d;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+        color: #c92635;
+      }
+
+      .main-btn {
+        display: block;
+        margin: 0 auto;
+        color: #f5f5f5;
+        background: #fd485d;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 16px 32px;
+        border-radius: 6px;
+        border: #fd485d;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        box-shadow: 0px 6px 10px 0px #14000280;
+      }
+
+      .main-btn:hover {
+        background: #c92635;
+      }
+
+      hr {
+        opacity: 0.3;
+      }
+
+      .coder-info {
+        font-family: monospace;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+        opacity: 0.5;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="main-heading">Do You Like a Yogurt?</h1>
+      <h2 class="sub-heading">
+        Yes, especially a <span class="accent-color">Greek Yogurt 😋</span>
+      </h2>
+      <hr class="divier" />
+      <img
+        class="main-img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/873/original/yogurt-2-img.jpg?1665918672"
+        alt="Greek Yogurt"
+      />
+      <p class="txt">
+        Made of fresh milk curdled and then fermented by means of bacteria,
+        yoghurt has always been one of the finest products of the
+        <em>Greek farming tradition </em> since the ancient times. Thick, creamy
+        and super tasty, the <strong>  Greek yoghurt </strong> is made of pure
+        sheep’s milk in small dairy units. In larger ones, they usually make
+        yoghurt with fresh cow’s milk, be it skimmed or semi-skimmed. They also
+        add ingredients favouring health and growth for kids, or make it with
+        strained cow’s milk (with the fat included ranging from 0%-10%) and milk
+        cream, or even pair it with fruits and cereals as a desert to boost its
+        nutritional capacity.
+        <br />
+        <br />
+        Over the past few years the Greek strained yoghurt has conquered the
+        world, marking a startling increase in sales worldwide.
+      </p>
+      <a
+        class="link"
+        href="https://www.visitgreece.gr/experiences/gastronomy/traditional-products/greek-yogurt/"
+        target="_blank"
+      >
+        Read More Info
+      </a>
+      <button class="main-btn" type="button">👉 Buy Greek Yogurt</button>
+      <p class="coder-info">Coded by Hanna Tubolets</p>
+    </div>
+    <script>
+      function buyNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            `Thanks, ${name}, we will be in touch by email, meanwhile, have a lot of Yogurts 😉!`
+          );
+        } else {
+          alert(`🤔 Please check your data and fill these fields again.`);
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buyNow);
+    </script>
+  </body>
+</html>
